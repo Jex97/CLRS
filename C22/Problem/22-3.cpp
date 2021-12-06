@@ -2,6 +2,7 @@
 // O(E)
 #include "common.h"
 
+using namespace std;
 /*
 * u: 当前节点;
 * path: 欧拉回路路径;
