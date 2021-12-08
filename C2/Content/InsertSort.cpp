@@ -1,9 +1,15 @@
 #include "common.h"
 
 using namespace std;
+// 插入排序
+// 稳定
+// 时间复杂度: O(n^2)
+// 空间复杂度: O(1)
+
 
 /*
-* v: 待排序的数组
+* InertSort: 插入排序;
+* v: 待排序的数组;
 */
 void InsertSort(vector<int>& v){
     for(int i = 1; i < v.size(); ++i){
