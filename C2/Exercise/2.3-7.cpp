@@ -23,6 +23,10 @@ void MergeSort(vector<int>& v, int l, int r){
     }
 }
 
+/*
+* 两数之和: 排序 + 双指针;
+* 时间复杂度: O(NlogN);
+*/
 bool twoSum(vector<int>& v, int x){
     MergeSort(v,0,v.size()-1);
     int l = 0;
