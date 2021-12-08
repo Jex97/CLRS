@@ -1,4 +1,4 @@
-#include "common.h"
+#include "../../common.h"
 
 using namespace std;
 // 归并排序
