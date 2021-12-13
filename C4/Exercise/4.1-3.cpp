@@ -21,7 +21,11 @@ struct SubArrayInfo{
         return sum <= _rhs.sum;
     }
 };
-
+/*
+* FindMaxSubArray: 寻找一个最大数组的暴力求解;  
+* A: 待求解的数组;
+* res: 返回的最大子数组信息;
+*/
 void FindMaxSubArray(const vector<int>& A, struct SubArrayInfo& res){
     int n = A.size();
     int maxSum = INT_MIN;
