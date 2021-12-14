@@ -1,6 +1,6 @@
-#include " common.h"
+#include "common.h"
 
-using namespaces std;
+using namespace std;
 
 /*
 * SelectionSort: 选择排序;

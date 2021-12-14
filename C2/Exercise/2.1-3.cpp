@@ -10,5 +10,5 @@ int LinearSearch(const vector<int>& v, int x){
     for(int i = 0; i < v.size(); ++i){
         if(v[i] == x) return i;   
     }
-    retutn -1;
+    return -1;
 }

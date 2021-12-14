@@ -16,7 +16,7 @@ int BinarySearch(const vector<int>& v, int x){
         else if(v[mid] > x) r = mid - 1;
         else l = mid + 1;
     }
-    retutn -1;
+    return -1;
 }
 
 
@@ -34,5 +34,5 @@ int BinarySearch(const vector<int>& v, int l, int r, int x){
         else if(v[mid] > x) return BinarySearch(v,l,mid-1,x);
         else return BinarySearch(v,mid+1,r,x);
     }
-    retutn -1;
+    return -1;
 }

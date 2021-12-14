@@ -15,7 +15,7 @@ using namespace std;
 * r: 第二个数组的结束下标;
 * 注意：此处保证(l < r)
 */
-void Merge(vector<int>& v, int l, int mid, int r){
+void static Merge(vector<int>& v, int l, int mid, int r){
     vector<int> L(v.begin()+l, v.begin()+mid+1);
     vector<int> R(v.begin()+mid+1, v.begin()+r+1);
     int ptrL = 0;
@@ -38,7 +38,7 @@ void Merge(vector<int>& v, int l, int mid, int r){
 * l: 待排序数组的开始下标
 * r: 待排序数组的结束下标;
 */
-void MergeSort(vector<int>& v, int l, int r){
+void static MergeSort(vector<int>& v, int l, int r){
     if(l < r){
         int mid = (l+r)/2;
         MergeSort(v,l,mid);

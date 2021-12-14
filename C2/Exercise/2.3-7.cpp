@@ -2,7 +2,7 @@
 
 using namespace std;
 
-void Merge(vector<int>& v, int l, int mid, int r){
+void static Merge(vector<int>& v, int l, int mid, int r){
     vector<int> L(v.begin()+l, v.begin()+mid+1);
     vector<int> R(v.begin()+mid+1, v.begin()+r+1);
     L.push_back(INT_MAX);                            //引入哨兵，简化编程。 注意添加的元素必须严格大于数组中的所有元素；
@@ -14,7 +14,7 @@ void Merge(vector<int>& v, int l, int mid, int r){
         else v[i] = R[ptrR++];
     }
 }
-void MergeSort(vector<int>& v, int l, int r){
+void static MergeSort(vector<int>& v, int l, int r){
     if(l < r){
         int mid = (l+r)/2;
         MergeSort(v,l,mid);

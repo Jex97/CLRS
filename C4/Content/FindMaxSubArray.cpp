@@ -39,7 +39,7 @@ void FindMaxCrossingSubArray(const vector<int>& A, int low, int mid, int high, s
         }
     }
     int rightSum = INT_MIN;
-    int 
+    sum = 0;
     for(int i = mid+1; i <= high; ++i){
         sum += A[i];
         if(sum > rightSum){
@@ -61,14 +61,14 @@ void FindMaxCrossingSubArray(const vector<int>& A, int low, int mid, int high, s
 void FindMaxSubArray(const vector<int>& A, int low, int high, struct SubArrayInfo& res){
     if(low == high){
         res.left = res.right = low;
-        res.sum = A[row];
+        res.sum = A[low];
         return;
     }
     int mid = (low + high) / 2;
     struct SubArrayInfo leftmaxsub, rightmaxsub, crossmaxsub;
     
     FindMaxSubArray(A, low, mid, leftmaxsub);
-    FindMaxSubArray(A, mid+1, rightmaxsub);
+    FindMaxSubArray(A, mid+1, high, rightmaxsub);
     FindMaxCrossingSubArray(A, low, mid, high, crossmaxsub);
     
     if(leftmaxsub <= crossmaxsub && rightmaxsub <= crossmaxsub) res = crossmaxsub;
