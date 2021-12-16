@@ -6,7 +6,7 @@
 #define GET_VARIABLE_NAME(Variable) (#Variable)
 
 using namespace std;
-void SortTest(void (*SortMethod) (std::vector<int>& v), int TestRank) {
+void SortTest(void (*SortMethod) (std::vector<int>& v), int TestRank = 3) {
 	
 	vector<int> TestSizes{ 100,1000,10000, 100000};
 	

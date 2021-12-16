@@ -2,7 +2,7 @@
 
 **主要内容：** 算法导论第4版的所有算法，以及**可编程实现**的所有习题;
 
-**补充内容：** 部分算法的简单测试代码；
+**补充内容：** 部分算法的简单**测试**代码；
 
 **实现语言：** C++;
 
@@ -19,7 +19,13 @@
   * [x] 已完结;
   * [ ] 部分完成，待更新;
 
-## 目录
+**章节目录**
+
 - [x] [第1章：算法基础](https://github.com/jinjin2017c/CLRS/tree/main/C2)
 - [ ] [第2章：分治策略](https://github.com/Jex97/CLRS/tree/main/C4)
 - [ ] [第22章：基本的图算法](https://github.com/jinjin2017c/CLRS/tree/main/C22)
+
+**测试功能：**
+
+- [x] [排序算法测试](https://github.com/Jex97/CLRS/blob/main/AlgorithmTest/SortTest.cpp)
+
