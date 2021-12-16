@@ -42,3 +42,7 @@ void MergeSort(vector<int>& v, int l, int r){
         Merge(v,l,mid,r);
     }
 }
+
+void MergeSort(vector<int>& v) {
+    MergeSort(v, 0, v.size()-1);
+}
