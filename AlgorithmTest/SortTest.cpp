@@ -1,4 +1,4 @@
-#include "AlgorithmTest.h"
+ï»¿#include "AlgorithmTest.h"
 
 #include<algorithm>
 #include<ctime>
@@ -9,7 +9,7 @@ using namespace std;
 void SortTest(void (*SortMethod) (std::vector<int>& v), int TestRank) {
 	
 	vector<int> TestSizes{ 100,1000,10000, 100000};
-
+	
 	if (TestRank >= TestSizes.size()) {
 		cout << "Error: TestRank must less than " << TestSizes.size() << "!" <<endl;
 		return;
@@ -18,7 +18,7 @@ void SortTest(void (*SortMethod) (std::vector<int>& v), int TestRank) {
 	for (int i = 0; i <= TestRank; ++i) {
 		bool success = true;
 
-		// ³õÊ¼»¯´ýÅÅÐòÊý×é
+		// åˆå§‹åŒ–å¾…æŽ’åºæ•°ç»„ 
 		vector<int> v1(TestSizes[i]);
 		vector<int> v2(TestSizes[i]);
 		for (int j = 0; j < TestSizes[i]; ++j) {
