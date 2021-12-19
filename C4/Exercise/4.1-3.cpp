@@ -26,7 +26,7 @@ struct SubArrayInfo{
 * A: 待求解的数组;
 * res: 返回的最大子数组信息;
 */
-void FindMaxSubArray(const vector<int>& A, struct SubArrayInfo& res){
+void static FindMaxSubArray(const vector<int>& A, struct SubArrayInfo& res){
     int n = A.size();
     int maxSum = INT_MIN;
     for(int i = 0; i < n; ++i){

@@ -21,8 +21,8 @@
 
 **章节目录**
 
-- [x] [第1章：算法基础](https://github.com/jinjin2017c/CLRS/tree/main/C2)
-- [ ] [第2章：分治策略](https://github.com/Jex97/CLRS/tree/main/C4)
+- [x] [第2章：算法基础](https://github.com/jinjin2017c/CLRS/tree/main/C2)
+- [ ] [第4章：分治策略](https://github.com/Jex97/CLRS/tree/main/C4)
 - [ ] [第22章：基本的图算法](https://github.com/jinjin2017c/CLRS/tree/main/C22)
 
 **测试功能：**
