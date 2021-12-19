@@ -8,7 +8,12 @@ using namespace std;
 
 
 typedef vector<vector<int>> Matrix;
-
+/*
+* SquareMatrixMultiply: ÆÓËØ¾ØÕó³Ë·¨;
+* A: ´ı³Ë¾ØÕó;
+* B: ´ı³Ë¾ØÕó;
+* return: Matrix C(n*n);
+*/
 Matrix SquareMatrixMultiply(const Matrix& A, const Matrix& B) {
 	int n = A.size();
 	Matrix C;

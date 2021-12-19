@@ -1,17 +1,17 @@
-#include "common.h"
+ï»¿#include "common.h"
 
 using namespace std;
 
 
-// µİ¹é·ÖÖÎ¾ØÕó³Ë·¨
-// Ê±¼ä¸´ÔÓ¶È£ºO(n^3)
+// é€’å½’åˆ†æ²»çŸ©é˜µä¹˜æ³•
+// æ—¶é—´å¤æ‚åº¦ï¼šO(n^3)
 
 Matrix SquareMatrixMultiply(const Matrix& A, const Matrix& B);
 typedef vector<vector<int>> Matrix;
 /*
-* SquareMatrixMultiplyRecursive: µİ¹é¾ØÕó³Ë·¨;
-* A: ´ı³Ë¾ØÕó;
-* B: ´ı³Ë¾ØÕó;
+* SquareMatrixMultiplyRecursive: é€’å½’çŸ©é˜µä¹˜æ³•;
+* A: å¾…ä¹˜çŸ©é˜µ;
+* B: å¾…ä¹˜çŸ©é˜µ;
 * return: Matrix C(n*n);
 */
 Matrix SquareMatrixMultiplyRecursive(const Matrix& A, const Matrix& B) {
